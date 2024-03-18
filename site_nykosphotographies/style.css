@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+}
+/*Bloc-page*/
+body
+{
+    background-color: #1f2039;
+    font-family: 'Manrope', sans-serif, Verdana;
+    font-size: 1.1em;
+    color: white;
+}
+/*Header*/
+header,
+footer
+{
+    padding: 1em 2em;
+    background-color: white;
+    color: #1f2039;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Textes*/
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    color: #A5B4FC;
+}
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #1f2039;
+    margin-block: auto;
+    padding-bottom: 50px;
+}
+h2[class="catégorie"]
+{
+    padding-top: 80px;
+}
+/*Liens*/
+nav a
+{
+    color: #1f2039;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover
+{
+    text-decoration: overline;
+}
+.logo_lien_accueil:hover
+{
+    opacity: 0.7;
+}
+/*Boutons*/
+.cta
+{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(#8e86b5, #ACAEED);
+    border-radius: 50px;
+    padding: 20px 30px;
+    display: inline-block;
+    margin: 1.5em auto;
+    width: fit-content;
+}
+.cta:hover
+{
+    background: linear-gradient(#696484, #8788ba);
+}
+/*Section Main*/
+section
+{
+    text-align: justify;
+    padding: 80px 110px;
+}
+    /*Présentation*/
+.presentation
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+
+}
+.presentation img
+{
+    box-shadow: 30px 30px 1px rgba(172, 174, 237, 0.16);
+}
+    /*Galerie*/
+.galerie
+{
+    background-color: white;
+
+}
+.galerie_photos
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 1.5em;
+}
+.galerie_photos img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.miniature
+{
+    position: relative;
+}
+.lien_photo
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: none; /*Cacher l'élément*/
+}
+a[class="miniature"]:hover .lien_photo
+{
+    display: flex;
+}
+.Copyright /*crédits photos*/
+{
+    color: #1f2039;
+}
+
+/*Tableau*/
+caption
+{
+    display: none;
+}
+table
+{
+    border-collapse: collapse;
+    border: solid 1px white;
+    margin: auto;
+    width: 100%;
+
+}
+th
+{
+    border: solid 0.5px white;
+    padding: 0.4em;
+    text-align: center;
+}
+td
+{
+    border: solid 0.5px white;
+    padding: 1.6em;
+    text-align: center;
+}
+.prestations
+{
+    list-style-type: none;
+    display: contents;
+}
+
+/*Formulaire de contact*/
+.contact_form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 110px;
+}
+.contact_form h2
+{
+    color: #A5B4FC;
+    text-align: center;
+}
+form
+{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, minmax(8px, auto));
+    column-gap: 20px;
+}
+form input,
+form textarea
+{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Manrope', sans-serif, Verdana;
+    font-size: 0.8em;
+}
+.name_form
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.phone_form
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.email_form
+{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.project_form
+{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.cta
+{
+    grid-column: 1/3;
+}
