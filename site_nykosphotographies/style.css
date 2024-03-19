@@ -14,7 +14,7 @@ body
 header,
 footer
 {
-    padding: 20px 50px;
+    padding: 15px 50px;
     background-color: white;
     color: #1f2039;
     display: flex;
@@ -28,13 +28,15 @@ footer
 h1
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
+    font-size: 5.6em;
+    font-weight: 500;
     color: #A5B4FC;
 }
 h2
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5em;
+    font-weight: 600;
     color: #1f2039;
     margin-block: auto;
     padding-bottom: 50px;
@@ -45,14 +47,14 @@ h2[class="catégorie"]
 }
 p, a, label
 {
-    font-size: 1rem;
+    font-size: 1.7em;
 }
 /*Liens*/
 nav a
 {
     color: #1f2039;
     text-decoration: none;
-    padding: 10px;
+    margin-inline-end: 40px;
 }
 nav a:hover
 {
@@ -71,7 +73,7 @@ nav a:hover
     border-radius: 50px;
     padding: 20px 30px;
     display: inline-block;
-    margin: 1.5em auto;
+    margin: 10px auto;
     width: fit-content;
 }
 .cta:hover
@@ -89,18 +91,28 @@ section
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 2em;
+    align-items: start;
+    margin: auto;
 
 }
 .presentation img
 {
     box-shadow: 30px 30px 1px rgba(172, 174, 237, 0.16);
 }
+.text_presentation
+{
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+    row-gap: 30px;
+}
     /*Galerie*/
 .galerie
 {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 .galerie_photos
@@ -180,7 +192,6 @@ td
 {
     display: flex;
     flex-direction: column;
-    padding: 110px;
 }
 .contact_form h2
 {
@@ -189,7 +200,6 @@ td
 }
 form
 {
-    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, minmax(8px, auto));
@@ -198,13 +208,13 @@ form
 form input,
 form textarea
 {
+    display: block;
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 5px;
     border: none;
     font-family: 'Manrope', sans-serif, Verdana;
-    font-size: 1em;
 }
 .name_form
 {
@@ -221,7 +231,7 @@ form textarea
     grid-column: 1/3;
     grid-row: 2/3;
 }
-.project_form
+.message_form
 {
     grid-column: 1/3;
     grid-row: 3/4;
