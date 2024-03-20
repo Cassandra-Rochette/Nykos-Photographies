@@ -45,9 +45,9 @@ h2[class="catégorie"]
 {
     padding-top: 80px;
 }
-p, a, label
+p, a
 {
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 /*Liens*/
 nav a
@@ -84,7 +84,8 @@ nav a:hover
 section
 {
     text-align: justify;
-    padding: 80px 110px;
+    padding: 50px 200px;
+    font-size: 0.625rem;
 }
     /*Présentation*/
 .presentation
@@ -167,6 +168,7 @@ table
     border: solid 1px white;
     margin: auto;
     width: 100%;
+    font-size: 1.6em;
 
 }
 th
@@ -203,9 +205,12 @@ form
     display: grid;
     grid-template-rows: repeat(4, minmax(8px, auto));
     column-gap: 20px;
+    font-size: 1.6em;
+
 }
-form input,
-form textarea
+input,
+textarea,
+button
 {
     display: block;
     margin-top: 10px;
@@ -213,18 +218,20 @@ form textarea
     padding: 15px;
     border-radius: 5px;
     border: none;
+    resize: none;
     font-family: 'Manrope', sans-serif, Verdana;
+    font-size: 1em;
 }
-.name_form .phone_form
+.champ
 {
     display: flex;
     flex-direction: column;
 }
-.email_form
+.email
 {
     grid-column: 1/3;
 }
-.message_form
+.message
 {
     grid-column: 1/3;
 }
