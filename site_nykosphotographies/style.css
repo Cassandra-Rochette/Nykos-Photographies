@@ -96,16 +96,18 @@ section
     margin: auto;
 
 }
-.presentation img
-{
-    box-shadow: 30px 30px 1px rgba(172, 174, 237, 0.16);
-}
+
 .text_presentation
 {
     display: flex;
     flex-direction: column;
     padding-right: 80px;
     row-gap: 30px;
+}
+
+.presentation img
+{
+    object-fit: scale-down;
 }
     /*Galerie*/
 .galerie
